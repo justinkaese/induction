@@ -1,0 +1,11 @@
+body {
+  background-color: #f3f5f9;
+  padding: 2%;
+}
+h1,
+p {
+  font-family: Lato;
+}
+.custom-card {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 6px;
+}
