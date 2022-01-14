@@ -11,10 +11,21 @@ const { Title } = Typography;
 export default function App() {
   const data = {
     employmentDocs: [
-      { id: 3132198465174, title: 'Letter of Engagement' },
-      { id: 3132195617665, title: 'Individual Flexability Arrangement' },
+      {
+        id: 3132198465174,
+        title: 'Letter of Engagement',
+        download: 'loren ipsum',
+      },
+      {
+        id: 3132195617665,
+        title: 'Individual Flexability Arrangement',
+        download: 'loren ipsum',
+      },
     ],
-    qualifications: [],
+    qualifications: [
+      { id: 23132132132, title: 'Drivers Licence', download: '' },
+      { id: 23897465432, title: 'High Risk Work Licence', download: '' },
+    ],
   };
   return (
     <>

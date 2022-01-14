@@ -19,14 +19,19 @@ export default function LetterOfEngagement(props) {
             <List.Item key={item.id}>
               <List.Item.Meta title={item.title} description={''} />
               <Space>
-                <Button
-                  type="primary"
-                  shape="round"
-                  icon={<DownloadOutlined />}
-                  ghost
-                >
-                  Download
-                </Button>
+                {item.download.length > 0 ? (
+                  <Button
+                    type="primary"
+                    shape="round"
+                    icon={<DownloadOutlined />}
+                    ghost
+                  >
+                    Download
+                  </Button>
+                ) : (
+                  ''
+                )}
+
                 <Upload maxCount={1}>
                   <Button
                     type="primary"
