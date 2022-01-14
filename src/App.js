@@ -4,6 +4,9 @@ import 'antd/dist/antd.css';
 import { Row } from 'antd';
 import ResponsiveCol from './ResponsiveCol';
 import DocumentList from './DocumentList';
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 export default function App() {
   const data = {
@@ -16,6 +19,9 @@ export default function App() {
   return (
     <>
       <Row gutter={[16, 20]}>
+        <ResponsiveCol>
+          <Title>Induction Documents</Title>
+        </ResponsiveCol>
         <ResponsiveCol>
           <DocumentList
             title={'Employment Documents'}
