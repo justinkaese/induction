@@ -27,7 +27,7 @@ export default function LetterOfEngagement(props) {
                 >
                   Download
                 </Button>
-                <Upload>
+                <Upload maxCount={1}>
                   <Button
                     type="primary"
                     shape="round"
